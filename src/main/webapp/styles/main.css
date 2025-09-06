@@ -1,0 +1,49 @@
+body {
+    background-color: #f9f8f4; /* Keep the original background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form {
+    max-width: 300px; /* Adjusted to match the sample's narrower form */
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Ensure labels are on a new line */
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Add subtle border like the sample */
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #c33;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #a22;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+	<link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body>
+	<div class="form-container">
+		<img src="images/murach_icon.jpg" alt="Logo" width="150">
+		<h2>Survey</h2>
+		<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+		
+		
+		<form action="test" method="post">
+			<fieldset>
+				<legend>Your Information</legend>
+				<label>First Name:</label>
+				<input type="text" name ="firstName" required><br>
+				
+				<label>Last Name:</label>
+			    <input type="text" name="lastName" required><br>
+			
+			    <label>Email:</label>
+			    <input type="email" name="email" required><br>
+			
+			    <label>Date of Birth:</label>
+			    <input type="date" name="dob"><br>
+			</fieldset>
+			
+			<fieldset>
+				<legend>How did you hear about us?</legend>
+				<input type="radio" name="hearAbout" value="Search engine" checked> Search engine<br>
+				<input type="radio" name="hearAbout" value="Word of mouth"> Word of mouth <br>
+			    <input type="radio" name="hearAbout" value="Social Media"> Social Media <br>
+			    <input type="radio" name="hearAbout" value="Other"> Other <br>
+			</fieldset>
+			
+			<fieldset>
+			    <legend>Would you like to receive announcements about new CDs and special offers?</legend>
+			    <label>
+					<input type="checkbox" name="updates" value="Yes"> YES, I'd like that.
+				</label><br><label>
+				  	<input type="checkbox" name="emailAnnouncements" value="Yes"> YES, please send me email announcements.
+				</label>
+			</fieldset>
+			
+			<label>Preferred contact:</label>
+			<select name="contact">
+			    <option>Email or postal mail</option>
+			    <option>Email only</option>
+			    <option>Postal mail only</option>
+			</select>
+			
+			<br><br>
+      		<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
